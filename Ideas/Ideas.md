@@ -1,0 +1,3 @@
+1. We can teach the personal patient DIR for each daily image in order to define DVF for different scenarious. And together with online radio therapy we will be able to change the irradiation dosage as an example for brathing during the therapy.
+2. If the quality of SCT is high: Synthetic CT can serve as GT for deformed CT.
+3.  By checking the idea from main workflow diagram we will get sCT and deformed CT and as a subidea we can check if the sCT can serve as deformed sCT, which is main idea behind Theoretical workflow 1 and  Theoretical workflow 2

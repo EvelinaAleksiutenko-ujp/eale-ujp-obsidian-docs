@@ -122,7 +122,7 @@
           <mxGeometry height="200" width="200" x="-243" y="158" as="geometry" />
         </mxCell>
         <mxCell id="sgRdLX9kGj8Z6z2WT9Qm-23" connectable="0" parent="1" style="group;fillColor=none;" value="" vertex="1">
-          <mxGeometry height="498" width="510" x="15" y="450" as="geometry" />
+          <mxGeometry height="498" width="510" x="25" y="448" as="geometry" />
         </mxCell>
         <mxCell id="sgRdLX9kGj8Z6z2WT9Qm-21" parent="sgRdLX9kGj8Z6z2WT9Qm-23" style="swimlane;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#808080);" value="ML part" vertex="1">
           <mxGeometry height="498" width="510" as="geometry" />
@@ -132,7 +132,7 @@
             <mxPoint x="271.5" y="566" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_TKb0GbtSahMz7H4dunw-26" parent="sgRdLX9kGj8Z6z2WT9Qm-23" style="rounded=0;whiteSpace=wrap;html=1;" value="Deformable Registration&lt;div&gt;(CT -&amp;gt; CBCT)&lt;/div&gt;" vertex="1">
+        <mxCell id="_TKb0GbtSahMz7H4dunw-26" parent="sgRdLX9kGj8Z6z2WT9Qm-23" style="rounded=0;whiteSpace=wrap;html=1;" value="Trained Deformable Registration&lt;div&gt;(CT -&amp;gt; CBCT)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="205" x="143.5" y="36" as="geometry" />
         </mxCell>
         <mxCell id="tyGZOxCVXyO-sHE1CriJ-43" edge="1" parent="sgRdLX9kGj8Z6z2WT9Qm-23" source="_TKb0GbtSahMz7H4dunw-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="tyGZOxCVXyO-sHE1CriJ-40">

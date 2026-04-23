@@ -128,7 +128,7 @@
         <mxCell id="-azMiMpoRBQOXiOXZVxv-67" edge="1" parent="1" source="-azMiMpoRBQOXiOXZVxv-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.619;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" target="-azMiMpoRBQOXiOXZVxv-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-azMiMpoRBQOXiOXZVxv-73" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#4D4D4D);" value="ML part(Synthetic CT generation)" vertex="1">
+        <mxCell id="-azMiMpoRBQOXiOXZVxv-73" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" value="ML part(Synthetic CT generation)" vertex="1">
           <mxGeometry height="204" width="200" x="616" y="449" as="geometry" />
         </mxCell>
         <mxCell id="uXHxC8GF9HRMm_daRwdq-2" edge="1" parent="-azMiMpoRBQOXiOXZVxv-73" source="-azMiMpoRBQOXiOXZVxv-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="-azMiMpoRBQOXiOXZVxv-71">
@@ -150,8 +150,8 @@
             <mxPoint x="514" y="1310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-azMiMpoRBQOXiOXZVxv-80" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#331A00);" value="ML part(AI Segmentation)" vertex="1">
-          <mxGeometry height="200" width="200" x="-283" y="465" as="geometry" />
+        <mxCell id="-azMiMpoRBQOXiOXZVxv-80" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="ML part(AI Segmentation)" vertex="1">
+          <mxGeometry height="201" width="200" x="-283" y="465" as="geometry" />
         </mxCell>
         <mxCell id="uXHxC8GF9HRMm_daRwdq-3" edge="1" parent="1" source="-azMiMpoRBQOXiOXZVxv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="-azMiMpoRBQOXiOXZVxv-70">
           <mxGeometry relative="1" as="geometry" />

@@ -4,13 +4,13 @@ As mentioned in SW handbook we have different modalities:
 1. CT
 2. CBCT
 3. MRI
-Now we are currently working n two of them CT and CBCT.
+Now we are currently working on two of them CT and CBCT.
 Right now we are buying only CTs. 
 
 The part of dosage calculation is deterministic.
 ### Regarding full workflow: 
 **ADD DIAGRAM**
-Our goal for now is to have PCT and masks on them and hav ecbct but we do not have masks on them so we do sct and do segmentation on it  treating it as CBCT masks.
+Our goal for now is to have PCT and masks on them and have cbct but we do not have masks on them so we do sct and do segmentation on it  treating it as CBCT masks.
 #### Regarding goals of the project:
 We do not have any requirements from the grant regarding metrics and benchmarks.
 Even thought we do not have any requirements regarding the amount of classes of OARs that we need to be able to process.
@@ -19,7 +19,6 @@ Add set up the monitoring and add benchmarks for metrics dice_score, Hausdorff 9
 For now it is already set up in MLFlow. 
 *Note*: Hausdorff 95(hausdorff ==TODO==: CHECK it is 90 or 95).
 
-*Note*: there will be no need to write any paper at the end of the project.
 ### Regarding segmentation: 
 The classes that we are trying to segment is only "Organs at risk(**OARs**)" and here is the list of them.  
 We are not trying to segment the tumor due to this raw reasons:
@@ -32,7 +31,7 @@ We are not trying to segment the tumor due to this raw reasons:
 For now the idea is to check if the fine-tuning on the opensource CADS dataset will improve the performance but on the independent testing dataset which we are buying now.
 Previously model was trained on the hospitals data just for PoC. But this data 
 1. The training script are https://gitlab.ujp.cz/ddud/auto_segmentace/-/blob/master/monai_framework/training/training_pipeline.py?ref_type=heads
-2. Current filenames from CADS opensourse dataset are [here]( https://cloud.ujp.cz/apps/files/files/10102277?dir=/AI_Segmentace/bundle_onnx/cads_551_baseline_model/logs&editing=false&openfile=true)
+2. Current filenames from CADS open sourse dataset are [here]( https://cloud.ujp.cz/apps/files/files/10102277?dir=/AI_Segmentace/bundle_onnx/cads_551_baseline_model/logs&editing=false&openfile=true)
 3. The limitation for Helious usage is 72 hours.
 4. We are using MONAI as a basic lib to work with images.
 5. Optuna tuning script can be [found](https://gitlab.ujp.cz/ddud/auto_segmentace/-/blob/master/monai_framework/tuning/tuning_pipeline.py?ref_type=heads): 
@@ -50,7 +49,7 @@ Previously model was trained on the hospitals data just for PoC. But this data
 	9. Hospital old data location: ![[Pasted image 20260408111018.png|633]]
 	10.  They were experimenting with UNETR on the old hospital data, but per each class they took 200 samples, so we need to experiment with the new data with bigger amount 
 		[Info about experiment](https://gitlab.ujp.cz/ddud/auto_segmentace/-/wikis/Experiments/Thorax/Transformer-UNETR)
-	11. For retrainng on the new data I should keep the transformations from that new branch. ==TODO==: go through all transformations and monai explanations and recomendation for it.
+	11. For retraining on the new data I should keep the transformations from that new branch. ==TODO==: go through all transformations and monai explanations and recomendation for it.
 	12. *Before working with DCM data you need every time convert it to te nifti files. there is no need in the some metadata of the dcm*. *Only theree attributes in metadata should be while working wih niffi files. Use simpleitk*
 	13. https://gitlab.ujp.cz/ddud/auto_segmentace/-/blob/feat--transfer-learning-update/monai_framework/data/data_container.py?ref_type=heads the data container is the input to the data loader. More info about data loaders(containers, cache dataset, data loader) here https://gitlab.ujp.cz/ddud/auto_segmentace/-/blob/feat--transfer-learning-update/monai_framework/training/training_data.py?ref_type=heads in setup_data_loaders
 	14. Regarding postprocessing every organ in https://gitlab.ujp.cz/ddud/auto_segmentace/-/blob/feat--transfer-learning-update/defined_structures.xlsx?ref_type=heads has its own.

@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="JZgE7ug2wDKv1km191VP">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;shadow=0;" value="&lt;b&gt;Levels of abstractions for Data&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="-1025" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-23" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="eyWdgOO4JJMZns3O4Xjb-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Type of collaboration&lt;br&gt;Example: public data" vertex="1">
+          <mxGeometry height="30" width="120" x="-1015" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-25" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="eyWdgOO4JJMZns3O4Xjb-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Type of data&lt;div&gt;Example: raw images, annotations&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="125" x="-1015" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-26" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-41" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="eyWdgOO4JJMZns3O4Xjb-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="The modality of the data&lt;br&gt;Example: MRI" vertex="1">
+          <mxGeometry height="40" width="130" x="-1017.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-24" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="eyWdgOO4JJMZns3O4Xjb-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="The source of the data&lt;br&gt;Example: Motol" vertex="1">
+          <mxGeometry height="50" width="140" x="-1022.5" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="q5RdgA08VTZa8797QMmr-2" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="q5RdgA08VTZa8797QMmr-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Organ name&lt;br&gt;Example: MRI" vertex="1">
+          <mxGeometry height="40" width="130" x="-1015" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;shadow=0;" value="&lt;b&gt;Levels of abstractions for Data pipelines&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="-670" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-29" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Data" vertex="1">
+          <mxGeometry height="30" width="120" x="-1015" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-38" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Method/Model" vertex="1">
+          <mxGeometry height="30" width="120" x="-660" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-37" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Processing Domain" vertex="1">
+          <mxGeometry height="30" width="120" x="-660" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-36" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Data pipelines" vertex="1">
+          <mxGeometry height="30" width="120" x="-660" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-40" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Method stage details" vertex="1">
+          <mxGeometry height="30" width="120" x="-660" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="DataReference&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="120" x="-660" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-42" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="eyWdgOO4JJMZns3O4Xjb-41" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-960" y="410" as="sourcePoint" />
+            <mxPoint x="-960" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="&lt;p&gt;Method of data creation&lt;br&gt;Example: Automatic&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="-1015" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="q5RdgA08VTZa8797QMmr-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Data&lt;br&gt;Example: CT.dcm" vertex="1">
+          <mxGeometry height="40" width="130" x="-1020" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

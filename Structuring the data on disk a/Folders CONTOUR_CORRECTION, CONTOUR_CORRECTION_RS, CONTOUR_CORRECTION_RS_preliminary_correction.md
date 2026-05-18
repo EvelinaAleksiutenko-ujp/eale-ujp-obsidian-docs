@@ -20,5 +20,6 @@ TODO: ask if there are any reason for duplication, the reason can be that such s
 6. Rename CONTOUR_CORRECTION_RS_preliminary_correction to RS_BundleV3_organs_preliminary_correction
 7. Add a note what preliminary_correction is.
 ## Meaning of additional  .txt, .csv, .xlsx files in CONTOUR_CORRECTION and copyRS_according_ID.py  in CONTOUR_CORRECTION_RS
-1. TODO: Ask Denis what was the purpose of the script is the script copyRS_according_ID.py
-2. TODO: Ask Denis about all additional(mentioned above in the title) files
+1. Ask Denis what was the purpose of the script is the script copyRS_according_ID.py
+2. Ask Denis about all additional(mentioned above in the title) files
+Answers: 29.4.2026 https://docs.google.com/document/d/1wgFpAq3dvdR23c8oyqpRKRRghtLsXIQ0xlQAyFnk6Wg/edit?tab=t.0

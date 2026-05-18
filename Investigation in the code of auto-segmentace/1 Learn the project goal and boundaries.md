@@ -9,7 +9,7 @@ Read:
 - What is the package supposed to produce? Which modality is primary today?
 	- Answer: the package result is the models which segmenting OARs(all parts pf bossies, except lympth nodes) for CT modality only.
 - What test dataset were used to train model at old hospital data?(mentioned in https://gitlab.ujp.cz/ddud/auto_segmentace/-/wikis/home TODO 46 line)
-	- Answer:
+	- Answer: it can be found by following the pathes from config pathes on Helios
 
 ### Correction Notes
 1. ~~File auto_segmentace.wiki\home.md row 12  'decreases' s should be included in the link.~~

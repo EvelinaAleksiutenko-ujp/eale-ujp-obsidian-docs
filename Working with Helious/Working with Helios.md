@@ -1,3 +1,7 @@
+Source: ![[HELIOS-documentation.pdf]]
+General commands:
+1. `ssh alekseve@helios.fjfi.cvut.cz`
+2. `cd /mnt/lustre/helios-shared/UJP`
 
 For copying the data from the Helious use 'scp ''
 

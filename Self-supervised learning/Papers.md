@@ -1,0 +1,1 @@
+1. https://arxiv.org/abs/2505.13584 - survey for image segmentation

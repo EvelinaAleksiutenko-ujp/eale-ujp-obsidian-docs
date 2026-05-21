@@ -21,3 +21,6 @@ TODO: ask Denis
 And due to the time constraint I would now proceed with HaN for every module we should have till the end of phase 2(09/30/2026).
 So in order to do that as a first priority we should prioritize the labeling of the data for HaN.
 And while doing that we may ask use Pancreatic-CT-CBCT-SEG  and ask for the data.
+
+## Additional info about folder demo_generation_nii
+I did not found any info about what is the source of the data, DD does not know as well. I did not found it on Helios as well.

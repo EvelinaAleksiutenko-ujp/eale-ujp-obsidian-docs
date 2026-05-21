@@ -17,5 +17,4 @@ Focus on these questions:
 - Which folders are support code?
 - Which scripts are operational one-offs and should not be your first study target?
 Expected outcome:
-
 - you can explain the purpose of each main folder without reading every file.**

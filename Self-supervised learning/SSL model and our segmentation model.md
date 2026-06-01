@@ -37,7 +37,7 @@ While analyzing the paper I found different strategies of knowledge transfer:
 1. Combining ssl and segmentation backbones(below - approaches 1, 2)
 2. Using for ssl same backbone as segmentation model, no stacking(below - approach 3). Same as using just preinialized differently(not randomly, with a sense) current backbone of segmentation model.
 3. Using different backbone then segmentation and task-specific head.
-4. Bridging the weights from different layers of ssl backbone o another different layer of current segmantation model backbone.
+4. Bridging the weights from different layers of ssl backbone o another different layer of current segmentation model backbone.
 
 Current approaches of knowledge transfer that we will focus on:
 5. Combining SSL model backbone(already train on pretext task) with the segmentation model. Training segmentation model, while freezing the SSL part. So ssl component is used here as feature extractor only.

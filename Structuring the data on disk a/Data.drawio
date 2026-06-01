@@ -50,7 +50,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-11" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-87">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="322.5" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-13" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-33">
@@ -165,7 +165,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;Modalities&amp;gt;&lt;br&gt;Example: CBCT2CT&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="120" x="1110" y="405" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="545" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-44" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;curved=0;" target="MPZOoCf-aF6UcPGf69DZ-15">
@@ -182,7 +182,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-47" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="MPZOoCf-aF6UcPGf69DZ-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="910" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-49" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-51">
@@ -191,7 +191,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Method of annotation&amp;gt;&lt;br&gt;Examples: BundleV3&amp;amp;Preliminary correction" vertex="1">
           <mxGeometry height="60" width="140" x="720" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="730" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="RTSTRUCT files&lt;br&gt;Example: RS,RTS files, STR files" vertex="1">
@@ -214,7 +214,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-57" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-59">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="1850" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Corresponding registration files&lt;br&gt;Example: DR registration files" vertex="1">
@@ -281,7 +281,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-72" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-74">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-73" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="1655" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Corresponding registration files&lt;br&gt;Example: RG registration files" vertex="1">
@@ -292,7 +292,7 @@
             <mxPoint x="2085" y="647.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="32.5" width="130" x="2022.5" y="597.5" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-77" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Corresponding registration files&lt;br&gt;Example: RG, RE registration files" vertex="1">
@@ -310,7 +310,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-80" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-84">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="1110" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-82" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-81">
@@ -325,7 +325,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-85" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-89">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-86" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-86" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="1375" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-87" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Raw images&lt;br&gt;Example: .dcm or .nii files with corresponding modality as prefix&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
@@ -352,7 +352,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-94" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-98">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-95" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-95" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="2289.5" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-96" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-95">
@@ -379,7 +379,7 @@
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-103" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-107">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MPZOoCf-aF6UcPGf69DZ-104" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;Organ name&amp;gt;" vertex="1">
+        <mxCell id="MPZOoCf-aF6UcPGf69DZ-104" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;lt;ROI&amp;gt;" vertex="1">
           <mxGeometry height="30" width="120" x="2539.5" y="600" as="geometry" />
         </mxCell>
         <mxCell id="MPZOoCf-aF6UcPGf69DZ-105" edge="1" parent="1" source="MPZOoCf-aF6UcPGf69DZ-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MPZOoCf-aF6UcPGf69DZ-104">

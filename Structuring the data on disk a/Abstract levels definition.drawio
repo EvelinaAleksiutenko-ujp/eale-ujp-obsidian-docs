@@ -34,7 +34,7 @@
         <mxCell id="q5RdgA08VTZa8797QMmr-2" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="q5RdgA08VTZa8797QMmr-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eyWdgOO4JJMZns3O4Xjb-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Organ name&lt;br&gt;Example: MRI" vertex="1">
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="ROI&lt;br&gt;Example: HaN" vertex="1">
           <mxGeometry height="40" width="130" x="-1015" y="490" as="geometry" />
         </mxCell>
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;shadow=0;" value="&lt;b&gt;Levels of abstractions for Data pipelines&lt;/b&gt;" vertex="1">

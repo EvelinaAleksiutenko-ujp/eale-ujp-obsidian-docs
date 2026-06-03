@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="JZgE7ug2wDKv1km191VP">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,7 +23,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="The modality of the data&lt;br&gt;Example: MRI" vertex="1">
-          <mxGeometry height="40" width="130" x="-1017.5" y="360" as="geometry" />
+          <mxGeometry height="41" width="132.5" x="-1017.5" y="360" as="geometry" />
         </mxCell>
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-24" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="eyWdgOO4JJMZns3O4Xjb-17">
           <mxGeometry relative="1" as="geometry" />
@@ -46,17 +46,17 @@
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Data" vertex="1">
           <mxGeometry height="30" width="120" x="-1015" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="eyWdgOO4JJMZns3O4Xjb-38" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-34">
+        <mxCell id="rKEG84rrgI0l350g-vcs-1" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="eyWdgOO4JJMZns3O4Xjb-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eyWdgOO4JJMZns3O4Xjb-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Method/Model" vertex="1">
-          <mxGeometry height="30" width="120" x="-660" y="230" as="geometry" />
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Method/Model&lt;br&gt;Example: U-net" vertex="1">
+          <mxGeometry height="30" width="120" x="-658" y="257" as="geometry" />
         </mxCell>
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-37" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-30">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eyWdgOO4JJMZns3O4Xjb-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Processing Domain" vertex="1">
-          <mxGeometry height="30" width="120" x="-660" y="180" as="geometry" />
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Processing Domain&lt;br&gt;Example: Segmentation" vertex="1">
+          <mxGeometry height="49" width="122" x="-660" y="180" as="geometry" />
         </mxCell>
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-36" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-31">
           <mxGeometry relative="1" as="geometry" />
@@ -67,11 +67,11 @@
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-40" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eyWdgOO4JJMZns3O4Xjb-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eyWdgOO4JJMZns3O4Xjb-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Method stage details" vertex="1">
-          <mxGeometry height="30" width="120" x="-660" y="280" as="geometry" />
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Method details(can be several folders)&lt;br&gt;Example: Training&amp;nbsp;" vertex="1">
+          <mxGeometry height="62" width="135" x="-665.5" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="eyWdgOO4JJMZns3O4Xjb-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="DataReference&amp;nbsp;" vertex="1">
-          <mxGeometry height="30" width="120" x="-660" y="330" as="geometry" />
+        <mxCell id="eyWdgOO4JJMZns3O4Xjb-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;" value="Data Reference(Link)&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="120" x="-658" y="412" as="geometry" />
         </mxCell>
         <mxCell id="eyWdgOO4JJMZns3O4Xjb-42" edge="1" parent="1" source="eyWdgOO4JJMZns3O4Xjb-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;" target="eyWdgOO4JJMZns3O4Xjb-41" value="">
           <mxGeometry relative="1" as="geometry">

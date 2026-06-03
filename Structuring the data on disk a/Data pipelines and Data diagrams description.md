@@ -39,7 +39,7 @@ Establish two abstraction levels:
 
   *Note: The Ground Truth (GT) folder name refers to data prepared directly by the hospital. For public datasets, GT labels are the annotations provided with the dataset, regardless of whether they were created manually or automatically.*
 
-**Level 6: Organ name**
+**Level 6: Region of interest(ROI)**
 - Purpose: Specification of anatomical coverage(ROI)
 
 **Level 7: Data**

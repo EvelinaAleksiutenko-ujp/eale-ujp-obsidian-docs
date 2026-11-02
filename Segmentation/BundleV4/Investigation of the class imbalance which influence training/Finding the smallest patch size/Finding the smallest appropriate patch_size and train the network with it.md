@@ -1,46 +1,43 @@
 # Our current architecture with a patch_size 64
 
-![[artlab-unet-architecture.svg]]
+![UNet architecture](artifacts/artlab-unet-architecture.svg)
 
 # Skip connection arguments size mismatch
-So we have 4 strides by 2, it means that we shrinking the size of the input 4 tuimes by 2, 2^4 =  16. So our system should be dividable by 16 in order to have contactenation via skip connection have the same size.
 
-Example:
-If the input is  8x8x8:
+We have 4 stride-2 stages, so the input is downsampled 4 times by 2: $2^4 = 16$. Therefore each input dimension must be divisible by 16, so that the tensors concatenated via skip connections have the same size.
 
+**Example:** input `8x8x8`
 
-Encoder stage 3:
-spatial size 1³ ────────────── saved for the skip connection
-       │                                      │
-       ▼                                     │
-Encoder stage 4:                         │
-stride 2, but size stays 1³            │
-       │                                      │
-       ▼                                     │
-Bottleneck: 1³                              │
-       │                                       │
-       ▼                                      │
-Decoder upsamples: 1³ → 2³       │
-       │                                       │
-       └─── try to combine ────┘
-		    2³ with 1³
-                         ✗
-         
-![[unet-8-cube-failure.png]]How it will look like for 16^3  input size:
-![[unet-16-cube-success.png]]
+```text
+Encoder stage 3:   spatial size 1³ ─────────┐  saved for the skip connection
+        │                                   │
+        ▼                                   │
+Encoder stage 4:   stride 2, size stays 1³  │
+        │                                   │
+        ▼                                   │
+Bottleneck:        1³                       │
+        │                                   │
+        ▼                                   │
+Decoder upsample:  1³ → 2³                  │
+        │                                   │
+        └──── try to combine 2³ with 1³ ◄───┘  → size mismatch
+```
+
+![UNet with 8x8x8 input fails](artifacts/unet-8-cube-failure.png)
+
+How it looks for a `16x16x16` input:
+
+![UNet with 16x16x16 input succeeds](artifacts/unet-16-cube-success.png)
+
 # BatchNorm needs more than one value per channel
 
- `16³` and less with batch 1 
- The deepest spatial map is `1×1×1`(as discussed above) we are inputting into the BatchNorm only one value - PyTorch will throw an error.
- If the batch is bigger than 1 with 16^3 it will not happen.
+- **`16³` (or smaller) with batch 1:** the deepest spatial map is `1×1×1` (as discussed above), so BatchNorm receives only one value per channel and PyTorch throws an error. With batch size > 1 this does not happen.
+- **`32³` with batch 1:** the deepest spatial map is `2×2×2`, so BatchNorm gets 8 values per channel.
+- **`16×16×32` with batch 1:** `1 × 1 × 2 = 2` spatial positions.
 
+As a result:
 
-For 32^3 and batch size 1 it will not happen cause the deepest spatial map is 2x2x2 so BN has 8 values.
-
-For `16×16×32` with batch 1: 1 × 1 × 2 = 2 spatial positions
-
-As the result we will have:
-![[astra-conclusion.png]]
+![Conclusion](artifacts/astra-conclusion.png)
 
 ## Conclusion
 

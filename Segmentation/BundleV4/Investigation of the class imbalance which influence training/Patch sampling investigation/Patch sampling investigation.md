@@ -30,7 +30,7 @@ Same idea for inverse_sqrt_freq:
 5. For `RandCropByPosNegLabeld`: from the pos/neg ratio.
    Currently `pos = 3` (75%), `neg = 1` (25%). It means that 3 patch centers will belong to foreground, 1 to background (air).
 6. For `RandCropByPosNegLabeld`with uniform ratio strategy, within the foreground draw there is no explicit per-class ratio — all foreground voxels across classes are pooled into one index array, so the class actually landed on is implicitly weighted by that class's voxel count (large/common structures dominate).
-![Patch sampling comparison](Patch%20sampling%20investigation%20artifacts/Pasted%20image%2020260923101718.png)
+![Patch sampling comparison](artifacts/Pasted%20image%2020260923101718.png)
 *Important: The number of voxels per structure we can not control. 
 Ratio for RandCropByPosNegLabeld(pos = 3, neg =1) we are fixing for our experiments.*
 
@@ -57,7 +57,7 @@ So in order to cover both of the points I introduce:
 
 The biggest class by voxel counts is Bag_Bowel - 405349208 voxels, the smallest is Pituitary - 19829. This significant difference, as well as ratios between other classes can be visible the first diagram below(blue one).
 
-![coverage_ratio_inverse_freq_n1](Patch%20sampling%20investigation%20artifacts/coverage_ratio_inverse_freq_n1.png)
+![coverage_ratio_inverse_freq_n1](artifacts/coverage_ratio_inverse_freq_n1.png)
 
 #### Results for uniform strategy for `RandCropByPosNegLabeld`, `RandCropByLabelClassesd`
 
@@ -69,7 +69,7 @@ Final amount of total draws is: 1800
 
 *Important: pn - means by using RandCropByPosNegLabeld approach, lc - by using RandCropByLabelClassesd;*
 
-![class_selection_prob_uniform_n1](Patch%20sampling%20investigation%20artifacts/class_selection_prob_uniform_n1.png)
+![class_selection_prob_uniform_n1](artifacts/class_selection_prob_uniform_n1.png)
 First diagram shows: What is the probability of class being present in the patch for all current draws(total draws) of patches;
 Second diagram shows: what is the probability of a class to be a crop center; 
 Third diagram: P(this class was the center voxel of **at least one** crop, across _all_ `total_draws` crops drawn)**
@@ -79,28 +79,28 @@ Parameters:
 2. Amount of draws(imitating the epochs) = 10;
 3. Amount of patches = 2;
 Final amount of total draws is: 18000
-![class_selection_prob_uniform_n10](Patch%20sampling%20investigation%20artifacts/class_selection_prob_uniform_n10.png)
+![class_selection_prob_uniform_n10](artifacts/class_selection_prob_uniform_n10.png)
 
 Parameters:
 1. amount of CT studies = 900;
 2. Amount of draws(imitating the epochs) = 30;
 3. Amount of patches = 2;
 Final amount of total draws is: 54000
-![class_selection_prob_uniform_n30](Patch%20sampling%20investigation%20artifacts/class_selection_prob_uniform_n30.png)
+![class_selection_prob_uniform_n30](artifacts/class_selection_prob_uniform_n30.png)
 
 Parameters:
 1. amount of CT studies = 900;
 2. Amount of draws(imitating the epochs) = 50;
 3. Amount of patches = 2;
 Final amount of total draws is: 90000
-![class_selection_prob_uniform_n50](Patch%20sampling%20investigation%20artifacts/class_selection_prob_uniform_n50.png)
+![class_selection_prob_uniform_n50](artifacts/class_selection_prob_uniform_n50.png)
 
 Parameters:
 1. amount of CT studies = 900;
 2. Amount of draws(imitating the epochs) = 100;
 3. Amount of patches = 2;
 Final amount of total draws is: 180000
-![class_selection_prob_uniform_n100](Patch%20sampling%20investigation%20artifacts/class_selection_prob_uniform_n100.png)
+![class_selection_prob_uniform_n100](artifacts/class_selection_prob_uniform_n100.png)
 
 
 ##### Conclusion
@@ -126,7 +126,7 @@ Parameters:
 2. Amount of draws(imitating the epochs) = 1;
 3. Amount of patches = 2;
 Final amount of total draws is: 1800
-![class_selection_prob_inverse_freq_n1](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_freq_n1.png)
+![class_selection_prob_inverse_freq_n1](artifacts/class_selection_prob_inverse_freq_n1.png)
 
 Parameters:
 1. amount of CT studies = 900;
@@ -134,27 +134,27 @@ Parameters:
 3. Amount of patches = 2;
 Final amount of total draws is: 18000
 
-![class_selection_prob_inverse_freq_n10](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_freq_n10.png)
+![class_selection_prob_inverse_freq_n10](artifacts/class_selection_prob_inverse_freq_n10.png)
 Parameters:
 1. amount of CT studies = 900;
 2. Amount of draws(imitating the epochs) = 30;
 3. Amount of patches = 2;
 Final amount of total draws is: 54000
 
-![class_selection_prob_inverse_freq_n30](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_freq_n30.png)
+![class_selection_prob_inverse_freq_n30](artifacts/class_selection_prob_inverse_freq_n30.png)
 
 Parameters:
 1. amount of CT studies = 900;
 2. Amount of draws(imitating the epochs) = 50;
 3. Amount of patches = 2;
 Final amount of total draws is: 90000
-![class_selection_prob_inverse_freq_n50](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_freq_n50.png)
+![class_selection_prob_inverse_freq_n50](artifacts/class_selection_prob_inverse_freq_n50.png)
 Parameters:
 1. amount of CT studies = 900;
 2. Amount of draws(imitating the epochs) = 100;
 3. Amount of patches = 2;
 Final amount of total draws is: 180000
-![class_selection_prob_inverse_freq_n100](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_freq_n100.png)
+![class_selection_prob_inverse_freq_n100](artifacts/class_selection_prob_inverse_freq_n100.png)
 
 
 ##### Conclusion
@@ -179,26 +179,26 @@ Parameters:
 2. Amount of draws(imitating the epochs) = 1;
 3. Amount of patches = 2;
 Final amount of total draws is: 1800
-![class_selection_prob_inverse_sqrt_freq_n1](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_sqrt_freq_n1.png)
+![class_selection_prob_inverse_sqrt_freq_n1](artifacts/class_selection_prob_inverse_sqrt_freq_n1.png)
 
 Parameters:
 1. amount of CT studies = 900;
 2. Amount of draws(imitating the epochs) = 10;
 3. Amount of patches = 2;
 Final amount of total draws is: 18000
-![class_selection_prob_inverse_sqrt_freq_n10](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_sqrt_freq_n10.png)
+![class_selection_prob_inverse_sqrt_freq_n10](artifacts/class_selection_prob_inverse_sqrt_freq_n10.png)
 Parameters:
 4. amount of CT studies = 900;
 5. Amount of draws(imitating the epochs) = 30;
 6. Amount of patches = 2;
 Final amount of total draws is: 54000
-![class_selection_prob_inverse_sqrt_freq_n30](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_sqrt_freq_n30.png)
+![class_selection_prob_inverse_sqrt_freq_n30](artifacts/class_selection_prob_inverse_sqrt_freq_n30.png)
 Parameters:
 7. amount of CT studies = 900;
 8. Amount of draws(imitating the epochs) = 50;
 9. Amount of patches = 2;
 Final amount of total draws is: 90000
-![class_selection_prob_inverse_sqrt_freq_n50](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_sqrt_freq_n50.png)
+![class_selection_prob_inverse_sqrt_freq_n50](artifacts/class_selection_prob_inverse_sqrt_freq_n50.png)
 
 Parameters:
 1. amount of CT studies = 900;
@@ -206,7 +206,7 @@ Parameters:
 3. Amount of patches = 2;
 
 Final amount of total draws is: 180000
-![class_selection_prob_inverse_sqrt_freq_n100](Patch%20sampling%20investigation%20artifacts/class_selection_prob_inverse_sqrt_freq_n100.png)
+![class_selection_prob_inverse_sqrt_freq_n100](artifacts/class_selection_prob_inverse_sqrt_freq_n100.png)
 
 ##### Conclusion
 By following the changes of the first diagram: 

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600"><title>Artlab 3D residual U-Net architecture</title><defs><marker id="head" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#1e293b" stroke-width="2"/></marker><marker id="skip-head" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#0f766e" stroke-width="2"/></marker></defs><rect width="1600" height="1600" fill="#ffffff"/><text x="70" y="30" fill="#1e293b" font-family="Arial, sans-serif" font-size="38" text-anchor="start"><tspan x="70" y="68">Your 3D residual U-Net</tspan></text>
+<text x="70" y="88" fill="#475569" font-family="Arial, sans-serif" font-size="22" text-anchor="start"><tspan x="70" y="110">MONAI UNet | channels [16, 32, 64, 128, 256] | strides [2, 2, 2, 2] | BatchNorm + PReLU</tspan></text>
+<text x="70" y="124" fill="#475569" font-family="Arial, sans-serif" font-size="20" text-anchor="start"><tspan x="70" y="144">Current example: 64 x 64 x 64 voxels. Tensor sizes below omit the batch dimension.</tspan></text>
+<rect x="100" y="185" width="330" height="95" rx="16" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="265" y="206.25" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="265" y="227.25">CT input</tspan><tspan x="265" y="253.5">1 channel | 64 x 64 x 64</tspan></text>
+<rect x="1000" y="185" width="450" height="95" rx="16" fill="#fef3c7" stroke="#64748b" stroke-width="2"/>
+<text x="1225" y="206.25" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="1225" y="227.25">Output logits | 63 x 64 x 64 x 64</tspan><tspan x="1225" y="253.5">62 foreground ROIs + background</tspan></text>
+<text x="100" y="300" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="18" text-anchor="start"><tspan x="100" y="318">ENCODER / DOWNSAMPLING</tspan></text>
+<text x="1000" y="300" fill="#15803d" font-family="Arial, sans-serif" font-size="18" text-anchor="start"><tspan x="1000" y="318">DECODER / UPSAMPLING</tspan></text>
+<rect x="100" y="345" width="330" height="125" rx="16" fill="#dbeafe" stroke="#64748b" stroke-width="2"/>
+<text x="265" y="368.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="265" y="389.125">Encoder 1 | stride 2</tspan><tspan x="265" y="415.375">16 channels | 32 x 32 x 32</tspan><tspan x="265" y="441.625">Residual unit: 2 convolutions</tspan></text>
+<rect x="1000" y="345" width="450" height="125" rx="16" fill="#dcfce7" stroke="#64748b" stroke-width="2"/>
+<text x="1225" y="368.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="1225" y="389.125">Decoder 1 | upsample x2</tspan><tspan x="1225" y="415.375">Concat: 16 + 16 = 32 channels</tspan><tspan x="1225" y="441.625">32 -&gt; 63 channels | 64 x 64 x 64</tspan></text>
+<polyline points="431,407.5 999,407.5" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-dasharray="9 7" marker-end="url(#skip-head)"/>
+<text x="715" y="367" fill="#0f766e" font-family="Arial, sans-serif" font-size="19" text-anchor="middle"><tspan x="715" y="386">skip: 16 channels at 32 x 32 x 32</tspan></text>
+<rect x="100" y="515" width="330" height="125" rx="16" fill="#dbeafe" stroke="#64748b" stroke-width="2"/>
+<text x="265" y="538.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="265" y="559.125">Encoder 2 | stride 2</tspan><tspan x="265" y="585.375">32 channels | 16 x 16 x 16</tspan><tspan x="265" y="611.625">Residual unit: 2 convolutions</tspan></text>
+<rect x="1000" y="515" width="450" height="125" rx="16" fill="#dcfce7" stroke="#64748b" stroke-width="2"/>
+<text x="1225" y="538.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="1225" y="559.125">Decoder 2 | upsample x2</tspan><tspan x="1225" y="585.375">Concat: 32 + 32 = 64 channels</tspan><tspan x="1225" y="611.625">64 -&gt; 16 channels | 32 x 32 x 32</tspan></text>
+<polyline points="431,577.5 999,577.5" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-dasharray="9 7" marker-end="url(#skip-head)"/>
+<text x="715" y="537" fill="#0f766e" font-family="Arial, sans-serif" font-size="19" text-anchor="middle"><tspan x="715" y="556">skip: 32 channels at 16 x 16 x 16</tspan></text>
+<rect x="100" y="685" width="330" height="125" rx="16" fill="#dbeafe" stroke="#64748b" stroke-width="2"/>
+<text x="265" y="708.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="265" y="729.125">Encoder 3 | stride 2</tspan><tspan x="265" y="755.375">64 channels | 8 x 8 x 8</tspan><tspan x="265" y="781.625">Residual unit: 2 convolutions</tspan></text>
+<rect x="1000" y="685" width="450" height="125" rx="16" fill="#dcfce7" stroke="#64748b" stroke-width="2"/>
+<text x="1225" y="708.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="1225" y="729.125">Decoder 3 | upsample x2</tspan><tspan x="1225" y="755.375">Concat: 64 + 64 = 128 channels</tspan><tspan x="1225" y="781.625">128 -&gt; 32 channels | 16 x 16 x 16</tspan></text>
+<polyline points="431,747.5 999,747.5" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-dasharray="9 7" marker-end="url(#skip-head)"/>
+<text x="715" y="707" fill="#0f766e" font-family="Arial, sans-serif" font-size="19" text-anchor="middle"><tspan x="715" y="726">skip: 64 channels at 8 x 8 x 8</tspan></text>
+<rect x="100" y="855" width="330" height="125" rx="16" fill="#dbeafe" stroke="#64748b" stroke-width="2"/>
+<text x="265" y="878.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="265" y="899.125">Encoder 4 | stride 2</tspan><tspan x="265" y="925.375">128 channels | 4 x 4 x 4</tspan><tspan x="265" y="951.625">Residual unit: 2 convolutions</tspan></text>
+<rect x="1000" y="855" width="450" height="125" rx="16" fill="#dcfce7" stroke="#64748b" stroke-width="2"/>
+<text x="1225" y="878.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="1225" y="899.125">Decoder 4 | upsample x2</tspan><tspan x="1225" y="925.375">Concat: 128 + 256 = 384 channels</tspan><tspan x="1225" y="951.625">384 -&gt; 64 channels | 8 x 8 x 8</tspan></text>
+<polyline points="431,917.5 999,917.5" fill="none" stroke="#0f766e" stroke-width="2.5" stroke-dasharray="9 7" marker-end="url(#skip-head)"/>
+<text x="715" y="877" fill="#0f766e" font-family="Arial, sans-serif" font-size="19" text-anchor="middle"><tspan x="715" y="896">skip: 128 channels at 4 x 4 x 4</tspan></text>
+<rect x="420" y="1040" width="660" height="105" rx="16" fill="#ede9fe" stroke="#64748b" stroke-width="2"/>
+<text x="750" y="1053.125" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="750" y="1074.125">Bottleneck | residual unit, stride 1</tspan><tspan x="750" y="1100.375">128 -&gt; 256 channels | 4 x 4 x 4</tspan><tspan x="750" y="1126.625">2 convolutions; no additional downsampling</tspan></text>
+<polyline points="265,281 265,344" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="1225,344 1225,281" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="265,471 265,514" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="1225,514 1225,471" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="265,641 265,684" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="1225,684 1225,641" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="265,811 265,854" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="1225,854 1225,811" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="265,981 265,1092.5 419,1092.5" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<polyline points="1081,1092.5 1225,1092.5 1225,981" fill="none" stroke="#1e293b" stroke-width="2.5" marker-end="url(#head)"/>
+<text x="800" y="1170" fill="#0f766e" font-family="Arial, sans-serif" font-size="20" text-anchor="middle"><tspan x="800" y="1190">Concatenate BEFORE upsampling. Dashed skips concatenate channels; residual shortcuts ADD.</tspan></text>
+<rect x="70" y="1230" width="715" height="210" rx="16" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+<text x="427.5" y="1321.875" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="427.5" y="1342.875"></tspan></text>
+<text x="92" y="1248" fill="#1e293b" font-family="Arial, sans-serif" font-size="23" text-anchor="start"><tspan x="92" y="1271">Inside the blocks</tspan></text>
+<text x="92" y="1290" fill="#475569" font-family="Arial, sans-serif" font-size="18" text-anchor="start"><tspan x="92" y="1308">Encoder / bottleneck main path:</tspan><tspan x="92" y="1330.5">Conv3D (3x3x3, stride s) -&gt; BN -&gt; PReLU</tspan><tspan x="92" y="1353">-&gt; Conv3D (3x3x3, stride 1) -&gt; BN -&gt; PReLU</tspan><tspan x="92" y="1375.5">Add a projected shortcut to this main path.</tspan><tspan x="92" y="1398">Decoder: ConvTranspose3D (3x3x3, stride 2)</tspan><tspan x="92" y="1420.5">-&gt; BN -&gt; PReLU -&gt; one-convolution residual unit.</tspan></text>
+<rect x="815" y="1230" width="715" height="210" rx="16" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+<text x="1172.5" y="1321.875" fill="#1e293b" font-family="Arial, sans-serif" font-size="21" text-anchor="middle"><tspan x="1172.5" y="1342.875"></tspan></text>
+<text x="837" y="1248" fill="#1e293b" font-family="Arial, sans-serif" font-size="23" text-anchor="start"><tspan x="837" y="1271">Patch-size guide | same architecture</tspan></text>
+<text x="837" y="1290" fill="#475569" font-family="Arial, sans-serif" font-size="18" text-anchor="start"><tspan x="837" y="1308">Input shape                  Deepest spatial grid</tspan><tspan x="837" y="1330.5">64 x 64 x 64                 4 x 4 x 4</tspan><tspan x="837" y="1353">64 x 64 x 32                 4 x 4 x 2</tspan><tspan x="837" y="1375.5">48 x 48 x 32                 3 x 3 x 2</tspan><tspan x="837" y="1398">32 x 32 x 32                 2 x 2 x 2</tspan><tspan x="837" y="1420.5">Use multiples of 16 on every axis.</tspan></text>
+<text x="70" y="1470" fill="#475569" font-family="Arial, sans-serif" font-size="18" text-anchor="start"><tspan x="70" y="1488">MONAI downsamples immediately: there is no full-resolution encoder skip. Final residual conv has no BN / activation.</tspan></text>
+<text x="70" y="1500" fill="#475569" font-family="Arial, sans-serif" font-size="18" text-anchor="start"><tspan x="70" y="1518">Softmax is applied in the loss, not by this network. Source-derived diagram; no runtime model execution.</tspan></text>
+<text x="70" y="1530" fill="#475569" font-family="Arial, sans-serif" font-size="18" text-anchor="start"><tspan x="70" y="1548">At spacing 0.9766 x 0.9766 x 3 mm, a 64-cube covers about 62.5 x 62.5 x 192 mm; smaller patches do not increase resolution.</tspan></text></svg>

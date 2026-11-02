@@ -29,7 +29,7 @@ Same idea for inverse_sqrt_freq:
       3. **Inverse-sqrt-freq** — `ratio_i = 1 / sqrt(count_i)`, a softer boost that sits between uniform and inverse-freq, avoiding over-correcting for very rare classes.
 5. For `RandCropByPosNegLabeld`: from the pos/neg ratio.
    Currently `pos = 3` (75%), `neg = 1` (25%). It means that 3 patch centers will belong to foreground, 1 to background (air).
-6. For `RandCropByPosNegLabeld`, within the foreground draw there is no explicit per-class ratio — all foreground voxels across classes are pooled into one index array, so the class actually landed on is implicitly weighted by that class's voxel count (large/common structures dominate).
+6. For `RandCropByPosNegLabeld`with uniform ratio strategy, within the foreground draw there is no explicit per-class ratio — all foreground voxels across classes are pooled into one index array, so the class actually landed on is implicitly weighted by that class's voxel count (large/common structures dominate).
 ![Patch sampling comparison](Patch%20sampling%20investigation%20artifacts/Pasted%20image%2020260923101718.png)
 *Important: The number of voxels per structure we can not control. 
 Ratio for RandCropByPosNegLabeld(pos = 3, neg =1) we are fixing for our experiments.*
